@@ -1,5 +1,4 @@
 import { forwardRef, useImperativeHandle, useState, useCallback } from 'react';
-import { NUIStatusBar } from '@cashalot-app/native-ui-lib';
 import {
   Modal,
   SafeAreaView,
@@ -61,7 +60,6 @@ const CountryPickerModal = forwardRef<PickerOpenRef, Props>(
           backgroundColor={darkMode ? '#000000' : '#FFFFFF'}
           barStyle={darkMode ? 'light-content' : 'light-content'}
         />
-        <NUIStatusBar />
         <Modal
           animationType="slide"
           onRequestClose={closeModal}
